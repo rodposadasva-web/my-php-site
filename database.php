@@ -1,19 +1,13 @@
 <?php
+$host     = getenv('DB_HOST')     ?: 'mysql-2f5b2346-calasiao-portal.l.aivencloud.com';
+$port     = getenv('DB_PORT')     ?: 14539;
+$user     = getenv('DB_USER')     ?: 'avnadmin';
+$password = getenv('DB_PASSWORD') ?: '';
+$dbname   = getenv('DB_NAME')     ?: 'defaultdb';
 
-    $db_server = "localhost";
-    $db_user = "root";
-    $db_pass = "";
-    $db_name = "systemarchivedb";
-    $conn = "";
+$conn = mysqli_connect($host, $user, $password, $dbname, $port);
 
-    try{
-        $conn = mysqli_connect($db_server, 
-                            $db_user, 
-                            $db_pass, 
-                            $db_name);
-    }
-    catch(mysqli_sql_exception){
-          die("Connection failed: " . mysqli_connect_error());
-    }
-
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
 ?>
