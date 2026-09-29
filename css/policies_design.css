@@ -1,0 +1,15 @@
+ .page-header {
+            background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url(img/carousel-1.jpg) center center no-repeat;
+            background-size: cover;
+        }
+        .policy-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 5px solid #06BB9C !important;
+        }
+        .policy-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.08) !important;
+        }
+        .bg-primary-custom {
+            background-color: #181d38 !important;
+        }

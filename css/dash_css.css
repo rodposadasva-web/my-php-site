@@ -1,0 +1,140 @@
+body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .section{
+            width: 90%;
+            margin: 60px auto;
+        }
+        .research-container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .research-card{
+            background: #ffffff;
+            border: 1px solid #ddd;
+            padding: 25px;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .research-card:hover{
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .research-title{
+            font-size: 24px;
+            font-weight: bold;
+            color: #2d1c0d;
+            margin-bottom: 15px;
+        }
+
+        .research-info{
+            color: #555;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .btn{
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #00abb1;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .btn:hover{
+            background: #019095;
+        }
+
+        .center{
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .read-more-btn{
+            display: inline-block;
+            padding: 14px 35px;
+            background: #00abb1;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        .read-more-btn:hover{
+            background: #019095;
+        }
+        a:hover{
+            text-decoration: none;
+            color:white;
+        }
+
+        @media(max-width: 900px){
+
+            .research-container{
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+        .extie{
+           margin-top: -50px;
+        }
+        /* Color Variations for Icons */
+        .bg-primary-light { background-color: rgba(0, 123, 255, 0.1); }
+        .bg-success-light { background-color: rgba(40, 167, 69, 0.1); }
+        .bg-warning-light { background-color: rgba(255, 193, 7, 0.1); }
+
+        /* Card Hover Animations */
+        .research-hover {
+            transition: all 0.3s ease;
+        }
+        .research-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+        }
+
+        /* Rounded Buttons */
+        .btn-sm-square {
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Footer modern links */
+        .footer a.btn-social {
+            transition: 0.3s;
+        }
+        .footer a.btn-social:hover {
+            background: #fff !important;
+            color: var(--primary) !important;
+        }
+        .transition-hover {
+            transition: all 0.3s ease;
+        }
+        .transition-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+        }
+        /* Add to your CSS for modern carousel dots */
+        .owl-carousel .owl-dots .owl-dot span {
+            width: 30px !important;
+            height: 5px !important;
+            border-radius: 5px !important;
+            background: rgba(255, 255, 255, 0.5) !important;
+        }
+
+        .owl-carousel .owl-dots .owl-dot.active span {
+            background: var(--primary) !important;
+        }
+        
