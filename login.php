@@ -105,7 +105,7 @@ if (isset($_POST['login'])) {
                         <div class="col-md-6 form-section">
                             <div class="text-center mb-5 d-md-none">
                                 <img src="img/CCNHS.png" alt="Logo" class="mb-3" style="width: 60px;">
-                                <h3 class="fw-bold">CCNHS Portal</h3>
+                                <h3 class="fw-bold">CCNHS Research Portal</h3>
                             </div>
                             
                             <div class="mb-4">
