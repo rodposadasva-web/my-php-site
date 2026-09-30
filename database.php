@@ -1,19 +1,25 @@
 <?php
+$host     = 'mysql-2f5b2346-calasiao-portal.l.aivencloud.com';
+$user     = 'avnadmin';
+$password = 'YOUR_AIVEN_PASSWORD_HERE';
+$database = 'defaultdb';
+$port     = 14539;
 
-    $db_server = "localhost";
-    $db_user = "root";
-    $db_pass = "";
-    $db_name = "systemarchivedb";
-    $conn = "";
+$conn = mysqli_init();
+mysqli_ssl_set($conn, NULL, NULL, NULL, NULL, NULL);
 
-    try{
-        $conn = mysqli_connect($db_server, 
-                            $db_user, 
-                            $db_pass, 
-                            $db_name);
-    }
-    catch(mysqli_sql_exception){
-          die("Connection failed: " . mysqli_connect_error());
-    }
+$connected = @mysqli_real_connect(
+    $conn, 
+    $host, 
+    $user, 
+    $password, 
+    $database, 
+    $port, 
+    NULL, 
+    MYSQLI_CLIENT_SSL
+);
 
+if (!$connected) {
+    die("Connection failed: " . mysqli_connect_error());
+}
 ?>
