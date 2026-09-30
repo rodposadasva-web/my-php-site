@@ -1,8 +1,4 @@
-[providers]
 providers = ["php"]
 
-[variables]
-NIXPACKS_PHP_ROOT_DIR = "."
-
 [start]
-cmd = "php -S 0.0.0.0:$PORT"
+cmd = "sh start.sh"
