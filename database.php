@@ -1,7 +1,7 @@
 <?php
 $host     = 'mysql-2f5b2346-calasiao-portal.l.aivencloud.com';
 $user     = 'avnadmin';
-$password = 'YOUR_AIVEN_PASSWORD_HERE';
+$password = '';
 $database = 'defaultdb';
 $port     = 14539;
 
